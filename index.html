@@ -3,65 +3,125 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="description" content="Portfolio personal"> 
+    <meta name="keywords" content="portfolio, programacion, fullstack, php, javascript, maabro">
+    <meta name="description" content="¡Hola Mundo! Mi nombre es Marcos y soy desarrollador de aplicaciones web.">
     <meta name="author" content="maabro">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
     <title>maabro</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>maabro</h1>
-            <p>Me llamo Marcos y soy desarrollador de aplicaciones web.</p>
-            <ul>
-                <li>Twitter</li>
-                <li>Linkedin</li>
-                <li>Github</li>
-            </ul>
+    <main class="bg-light">
+        <section class="pb-5 pt-3 container-fluid header">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fs-4 text-light pb-4">maabro</h1>
+                    <p class="fs-2 fw-bold text-light">¡Hola Mundo! Mi nombre es Marcos y soy desarrollador de aplicaciones web.</p>
+                    <p>
+                        <a href="https://twitter.com/maabro_" target="_blank" class="fs-3 mx-2 twt" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/maabro/" target="_blank" class="fs-3 mx-2 ink" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/maabro" target="_blank" class="fs-3 mx-2 git" title="GitHub"><i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="container container-md">
+            <section class="projects mb-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-lg-5">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top border-bottom project-img" width="100%" height="auto" src="img/poro.png"
+                                alt="smart_poro">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Poro</h5>
+                                <p class="card-text">Un bot para Discord que devuelve datos de los campeones del juego League of Legends. Está escrito en <b>Javascript</b>. La parte servidor funciona con <b>NodeJs</b> y la <b>Api de Discord</b>.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="" class="fs-3 card-link text-muted" title="Smart Poro"><i class="fas fa-home"></i></a>
+                                    <a href="" target="_blank" class="fs-3 card-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top border-bottom project-img" width="100%" height="auto" src="img/sudoku.png"
+                                alt="sudoku!">
+                            <div class="card-body">
+                                <h5 class="card-title">Sudoku!</h5>
+                                <p class="card-text">Sudoku online que registra los tiempos de los jugadores. Está escrito en <b>Javascript</b>. Los datos se almacenan en el navegador. El <i>front end</i> está hecho con <b>VueJs</b> y <b>Bootstrap</b>.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="" class="fs-3 card-link" title="Sudoku"><i class="fas fa-home"></i></a>
+                                    <a href="https://github.com/maabro/Sudoku" target="_blank" class="fs-3 card-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top border-bottom project-img" width="100%" height="auto" src="img/paint98.png"
+                                alt="Paint98">
+                            <div class="card-body">
+                                <h5 class="card-title">Paint98</h5>
+                                <p class="card-text fs-6">Inspirado en el Paint de Windows 95/98. Está escrito en <b>Javascript</b>. La aplicación está compuesta de un página principal con un video y otra página con un canvas. Utiliza las <b>APIs video y canvas de html5</b>.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="" class="fs-3 card-link" title="Paint98"><i class="fas fa-home"></i></a>
+                                    <a href="https://github.com/maabro/paint98" target="_blank" class="fs-3 card-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about px-lg-5">
+                <div class="row p-2">
+                    <div class="me col-lg-4">
+                        <span><i class="fas fa-user-graduate"></i></span>
+                        <p>Empecé aprendiendo html, css y php de forma autodidacta. Asenté las bases que tenia en el curso de Confección y publicación de páginas web impartido por el SOC. Decidido a aprender más me gradué en el Grado de Desarrollo de aplicaciones web en L’Escola del Clot.</p>
+                        <p>Estoy en constante formación gracias a los recursos que ofrece la red. Actualmente estoy aprendiendo sobre el análisis de datos y el machine learning.</p>
+                    </div>
+                    <div class="me col-lg-4">
+                        <span><i class="fas fa-user-check"></i></span>
+                        <p>Me siento cómodo tanto en el front como en el back end y, aunque va por temporadas, prefiero el back end. Como tengo predilección por <b>PHP</b> normalmente desarrollo con el combo <b>Laravel</b> y <b>MariaDB</b> para la parte back y en el front utilizo <b><a class="p-link" href="https://laravel.com/docs/8.x/blade" target="_blank">Blade</a></b> y <b>Bootstrap</b>.</p>
+                        <p>También me gusta desarrollar en <b>JavaScript</b>. Para la parte back suelo utilizar <b>NodeJs</b> y <b>MariaDB</b> (si se necesita una base de datos no relacional opto por <b>MongoDB</b>). En el front tengo conocimientos de <b>React</b>, <b>VueJs</b> y <b>Angular</b>, aunque no tengo ningún favorito.</p>
+                    </div>
+                    <div class="me col-lg-4">
+                        <span><i class="fas fa-user-astronaut"></i></span>
+                        <p>Me considero una persona activa, flexible y organizada. Tengo intereses comunes como por ejemplo el futbol, cine, la lectura, … y, con el que consumo más tiempo, la tecnología.</p>
+                        <p>Me encanta todo lo que este relacionado con ordenadores, consolas, blockchain, programación, … Intento estar siempre informado para no perder detalle. Adoro a los gatos.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact text-center p-5">
+                <img src="/img/me.png" width="200" height="200" alt="profile_pic" class="rounded-circle img-thumbnail profile">
+                <h2 class="mt-3">Contactemos</h2>
+                <div class="d-block px-lg-5">
+                    <p>Buscando activamente nuevas ideas y proyectos. Si estas interesado/a en que trabajemos juntos no dudes en ponerte en contacto conmigo. Puedes usar mis redes sociales o, si lo prefieres, mandarme un correo electrónico.</p>
+                </div>
+                <span class="d-block">
+                    <a href="https://twitter.com/maabro_" target="_blank" class="fs-1 mx-2 card-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="fs-1 mx-2 card-link" title="Mail"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/maabro/" target="_blank" class="fs-1 mx-2 card-link" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </span>
+
+            </section>
         </div>
-    </header>
-    <section>
-        <div>
-            <h2>Proyectos</h2>
-            <div>
-                <img src="https://picsum.photos/300/200" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod officia illum blanditiis obcaecati temporibus fugiat deserunt, dolore quos debitis praesentium et eaque molestias sed soluta saepe deleniti minus hic.</p>
-            </div>
-            <div>
-                <img src="https://picsum.photos/300/200" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod officia illum blanditiis obcaecati temporibus fugiat deserunt, dolore quos debitis praesentium et eaque molestias sed soluta saepe deleniti minus hic.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Sobre mí</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus nisi. Distinctio sed ad modi, commodi magni, tempore voluptas, corporis esse accusamus ipsa nulla reiciendis exercitationem? Velit ex dolorem quas?</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus nisi. Distinctio sed ad modi, commodi magni, tempore voluptas, corporis esse accusamus ipsa nulla reiciendis exercitationem? Velit ex dolorem quas?</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus nisi. Distinctio sed ad modi, commodi magni, tempore voluptas, corporis esse accusamus ipsa nulla reiciendis exercitationem? Velit ex dolorem quas?</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Contactame</h2>
-            <img src="/img/me.png" alt="" width="100" height="100">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure illum cumque ex odio accusantium expedita. Quos quis voluptatem tempore expedita at deserunt, quas, perferendis eos neque magnam, culpa officiis cum!</p>
-        </div>
-    </section>
-    <footer>
-        <span>2021 &copy; maabro</span>
-    </footer>
+        <footer class="footer p-4">
+            <span class="fot-text d-block">Creada con <i class="fab fa-html5 html5"></i>, <i class="fab fa-sass sass"></i>, <i class="fab fa-bootstrap boot"></i> &
+                <i class="fas fa-heart love"></i></span>
+            <span class="fot-copy d-block small mt-2">2021 &copy; maabro</span>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/02dda62dae.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

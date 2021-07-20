@@ -1,10 +1,68 @@
 @import "components/vars";
+.header {
+    background-image: url("../img/vscode.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-* {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 4rem;
+
+    .twt,
+    .ink,
+    .git {
+        color: $white-color;
+    }
+
+    .twt:hover,
+    .ink:hover,
+    .git:hover {
+        color: $hover-color;
+    }
 }
+b,
+.p-link,
+.container,
+.card-link {
+    color: $main-color;
+}
+.p-link:hover,
+.card-link:hover {
+    color: $hover-color;
+}
+.project-img {
+    width: 100%;
+    height: auto;
+}
+.col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.me {
+    span {
+        font-size: 3.5em;
+    }
+}
+.profile {
+    width: 200px;
+    filter: grayscale(100%);
+}
+.footer {
+    background-color: $main-color;
+    text-align: center;
+    color: $white-color;
+    
+    .html5 {
+        color: $html5;
+    }
+    .sass {
+        color: $sass;
+    }
+    .love {
+        color: $love;
+    }
+    .boot {
+        color: $boot;
+    }
 
-body {
-    font-family: $main-font;
 }

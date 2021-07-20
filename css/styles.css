@@ -1,11 +1,70 @@
-/* Fonts */
-* {
-  margin: 0;
-  padding: 0;
+/* Colors */
+.header {
+  background-image: url("../img/vscode.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+}
+.header .twt,
+.header .ink,
+.header .git {
+  color: #f8f9fa;
+}
+.header .twt:hover,
+.header .ink:hover,
+.header .git:hover {
+  color: #317cb5;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
+b,
+.p-link,
+.container,
+.card-link {
+  color: #0e2536;
+}
+
+.p-link:hover,
+.card-link:hover {
+  color: #317cb5;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.me span {
+  font-size: 3.5em;
+}
+
+.profile {
+  width: 200px;
+  filter: grayscale(100%);
+}
+
+.footer {
+  background-color: #0e2536;
+  text-align: center;
+  color: #f8f9fa;
+}
+.footer .html5 {
+  color: #e34c26;
+}
+.footer .sass {
+  color: #cf649a;
+}
+.footer .love {
+  color: darkred;
+}
+.footer .boot {
+  color: #7952b3;
 }
 
 /*# sourceMappingURL=styles.css.map */
