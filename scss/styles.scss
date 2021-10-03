@@ -5,15 +5,12 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
     margin-bottom: 4rem;
-
     .twt,
     .ink,
     .git {
         color: $white-color;
     }
-
     .twt:hover,
     .ink:hover,
     .git:hover {
@@ -50,8 +47,7 @@ b,
 .footer {
     background-color: $main-color;
     text-align: center;
-    color: $white-color;
-    
+    color: $white-color; 
     .html5 {
         color: $html5;
     }
@@ -64,5 +60,4 @@ b,
     .boot {
         color: $boot;
     }
-
 }
